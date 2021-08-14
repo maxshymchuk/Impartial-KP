@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="./popup.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@400;700&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <article class="article">
+      <span class="title" title="Last update 7 aug 21 - Max S">
+        impartial-kp
+      </span>
+      <div class="help" title="Reload page" id="help-reload">
+        <svg class="help-icon" height="512" viewBox="0 0 512 512" width="512" xmlns="http://www.w3.org/2000/svg">
+          <path d="m464.022 232h-.022a24 24 0 0 0 -23.98 24.021 184.063 184.063 0 0 1 -289.527 150.688c-83.1-58.188-103.369-173.136-45.181-256.237s173.137-103.372 256.237-45.182a184.078 184.078 0 0 1 34.012 30.71h-67.54a24 24 0 0 0 0 48h112a24 24 0 0 0 24-24v-112a24 24 0 0 0 -48 0v39.967a234.175 234.175 0 0 0 -26.94-22 231.982 231.982 0 1 0 -266.119 380.061 230.285 230.285 0 0 0 132.567 42.015 234.971 234.971 0 0 0 40.776-3.585 232.025 232.025 0 0 0 191.716-228.479 24 24 0 0 0 -23.999-23.979z"/>
+        </svg>
+      </div>
+    </article>
+    <section class="settings">
+      <div id="item-block" class="item">
+        <span class="description">
+          Type of overlay
+        </span>
+        <select id="item-block-select">
+          <option>Color</option>
+          <option>Blur</option>
+        </select>
+      </div>
+      <div id="item-color" class="item">
+        <span class="description">
+          Color of block
+        </span>
+        <div class="picker">
+          <label for="item-color-picker" id="item-color-picker-label">
+            #FF0000
+          </label>
+          <div class="wrapper">
+            <input type="color" id="item-color-picker" value="#FF0000">
+          </div>
+        </div>
+      </div>
+      <div id="item-blur" class="item hidden">
+        <span class="description">
+          Blur radius, px
+        </span>
+        <input id="item-blur-input" type="number" value="10" step="1" min="0">
+      </div>
+      <div id="item-type-action" class="item">
+        <span class="description">
+          Action to hide
+        </span>
+        <select id="item-type-action-select">
+          <option>Hover</option>
+          <option>Click</option>
+        </select>
+      </div>
+      <div id="item-transition" class="item">
+        <span class="description">
+          Transition, ms
+        </span>
+        <input id="item-transition-input" type="number" value="300" min="0" step="10">
+      </div>
+      <div id="item-reviews" class="item">
+        <span class="description">
+          Show reviews on film pages
+        </span>
+        <input id="item-reviews-checkbox" type="checkbox">
+      </div>
+    </section>
+  </body>
+</html>

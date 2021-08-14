@@ -1,0 +1,117 @@
+@keyframes blink {
+  50% {
+    visibility: hidden;
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Merriweather Sans', 'Arial', sans-serif;
+  font-size: 12px;
+}
+
+body {
+  width: 250px;
+  user-select: none;
+}
+
+input[type=text],
+input[type=number],
+select {
+  width: 80px;
+  box-sizing: border-box;
+}
+
+.picker {
+  display: flex;
+  align-items: center;
+}
+
+.picker label[for=item-color-picker] {
+  padding-right: 5px;
+  user-select: text;
+}
+
+.picker .wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  box-sizing: border-box;
+}
+
+.picker .wrapper input[type=color] {
+  width: 40px;
+  height: 40px;
+  border: 0;
+  min-width: unset;
+  flex-shrink: 0;
+}
+
+.article {
+  margin: 10px 15px;
+  display: flex;
+  align-items: center;
+}
+
+.article .title {
+  font-size: 24px;
+  font-weight: bold;
+  position: relative;
+}
+
+.article .title::after {
+  content: '';
+  display: block;
+  position: absolute;
+  left: 102%;
+  bottom: 6px;
+  width: 12px;
+  height: 3px;
+  background-color: #000;
+  animation: blink 2s step-start infinite;
+}
+
+.article .help {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: auto;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.article .help:hover {
+  background-color: #00000011;
+}
+
+.article .help .help-icon {
+  width: 15px;
+  height: 15px;
+}
+
+.settings .item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 30px;
+  padding: 5px 15px;
+}
+
+.settings .item:hover {
+  background-color: #00000011;
+}
+
+.settings .item .description {
+  margin-right: 20px;
+}
+
+.hidden {
+  display: none !important;
+}

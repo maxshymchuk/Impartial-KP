@@ -1,7 +1,7 @@
 {
   "name": "Impartial-KP",
-  "description": "Kinopoisk rating hider",
-  "version": "1.0.0",
+  "description": "Скрыватель оценок кинопоиска",
+  "version": "1.0.1",
   "manifest_version": 3,
   "icons": {
     "16": "./assets/impartialkp16.png",
@@ -40,7 +40,6 @@
   ],
   "permissions": [
     "storage",
-    "scripting",
     "tabs"
   ]
 }

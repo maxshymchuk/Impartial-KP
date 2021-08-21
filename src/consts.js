@@ -44,6 +44,9 @@ export const ratingQueries = {
   '^kinopoisk.ru/mykp/+': [
     '.filmsListShort .percent',
   ],
+  '^kinopoisk.ru/user/+': [
+    '.profileFilmsList .rating b',
+  ],
   '^kinopoisk.ru/afisha/+': [
     '.schedule-film__rating-value',
   ],

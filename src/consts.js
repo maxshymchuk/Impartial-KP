@@ -60,6 +60,16 @@ export const ratingQueries = {
     'div[class*=styles_sidebar] *[class*=styles_averageVoteCount]',
     'div[class*=styles_sidebar] *[class*=styles_rootVote]',
   ],
+  '^kinopoisk.ru/series/+': [
+    '*[class*=styles_carousel] *[class*=styles_ratingPosterNameplate]',
+    '.rating__value',
+    'div[class*=styles_basicInfoSection] .film-rating .film-rating-value',
+    'div[class*=styles_filmRatingSection] .film-rating .film-rating-value',
+    '.film-sub-rating *:first-child',
+    '.film-rate-form',
+    'div[class*=styles_sidebar] *[class*=styles_averageVoteCount]',
+    'div[class*=styles_sidebar] *[class*=styles_rootVote]',
+  ],
   'hd.kinopoisk.ru/film/+': [
     'div[class*=Rate__tag] span:first-child',
   ]

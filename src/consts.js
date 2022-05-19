@@ -34,7 +34,7 @@ export const ratingQueries = {
     '.block_top250 u',
     '.selection-film-item-poster__rating',
     '.rating *[class*=rating_ball]',
-    '.kpRating i',
+    '.kpRating',
     '.imdb',
     '.rating__value',
     '.kinopoisk-header-suggest-item__title-container *[class*=styles_rating]',

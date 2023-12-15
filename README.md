@@ -1,5 +1,5 @@
 # Impartial-KP
 
-Скрыватель оценок кинопоиска
+Kinopoisk ratings hider
 
-Расширение прячет рейтинг фильмов платформы Кинопоиск для беспристрастного выбора картины к просмотру
+The extension hides the ratings of films on the Kinopoisk platform for an impartial selection of films to watch
